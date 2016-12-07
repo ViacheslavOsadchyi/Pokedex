@@ -26,6 +26,10 @@
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+.pokeballBg{
+  background-image: url(../../pokeball.png);
+  background-position: center center;
+}
 
 /***
 * \COMMON
