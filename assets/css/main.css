@@ -1,0 +1,482 @@
+/***
+* PAGE LAYOUT
+***/
+
+#pageContent{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media ( max-width: 1200px ){
+  #pageContent{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/***
+* \PAGE LAYOUT
+***/
+
+/***
+* COMMON
+***/
+
+.transition03{
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/***
+* \COMMON
+***/
+
+.pokedex{
+  padding: 40px 0;
+}
+
+.pokedex__pageHeader{
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.pokedex__pageHeader .pokedex__heading{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.pokedex__typeFilter{
+  float: right;
+  margin-left: 20px;
+}
+.pokedex__typeFilterState{
+  text-transform: capitalize;
+}
+
+.pokemonList__gridHolder{
+  position: relative;
+  overflow: hidden;
+}
+
+.pokemonList__grid{
+  margin-top: -30px;
+}
+.pokemonList__item{
+  padding-top: 30px;
+  text-align: center;
+}
+.pokemonList__itemContent.thumbnail{
+  margin-bottom: auto;
+  padding: 20px;
+}
+.pokemonList__more{
+  margin-top: 30px;
+}
+
+.pokemonList__grid{
+  position: relative;
+  overflow: hidden;
+  min-height: 421px;  /* because of loader */
+}
+
+.pokemonList__img{
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 100%;
+  max-height: none;
+  cursor: pointer;
+}
+
+.pokemonList__name{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+ul.pokemonList__types{
+  padding-left: 0;
+  margin-bottom: auto;
+}
+.pokemonList__types{
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.pokemonList__type{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.pokemonList__type.btn,
+.pokemonList__type.btn:hover{
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .pokemonInfo{
+    margin-top: 30px;
+  }
+}
+
+.pokemonDsr.thumbnail{
+  padding: 20px;
+}
+
+.pokemonDsr__photo{
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 100%;
+  max-height: none;
+}
+
+.pokemonDsr_name{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pokemonDsr__props{
+  width: 100%;
+}
+.pokemonDsr__props td{
+  padding: 4px 8px;
+}
+
+ul.pokemonDsr__types{
+  padding-left: 0;
+  margin-bottom: auto; 
+}
+.pokemonDsr__types{
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.pokemonDsr__type{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.pokemonInfo__content.empty{
+  height: 467px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/***
+* POKEMON TYPES
+**/
+
+.pokemonType_type_normal,
+.pokemonType_type_fighting,
+.pokemonType_type_flying,
+.pokemonType_type_poison,
+.pokemonType_type_ground,
+.pokemonType_type_rock,
+.pokemonType_type_bug,
+.pokemonType_type_ghost,
+.pokemonType_type_steel,
+.pokemonType_type_fire,
+.pokemonType_type_water,
+.pokemonType_type_grass,
+.pokemonType_type_electric,
+.pokemonType_type_ice,
+.pokemonType_type_dragon,
+.pokemonType_type_dark,
+.pokemonType_type_fairy,
+.pokemonType_type_unknown,
+.pokemonType_type_shadow,
+.pokemonType_type_psychic{
+  color: #fff;
+}
+.btn.pokemonType_type_normal:hover,
+.btn.pokemonType_type_fighting:hover,
+.btn.pokemonType_type_flying:hover,
+.btn.pokemonType_type_poison:hover,
+.btn.pokemonType_type_ground:hover,
+.btn.pokemonType_type_rock:hover,
+.btn.pokemonType_type_bug:hover,
+.btn.pokemonType_type_ghost:hover,
+.btn.pokemonType_type_steel:hover,
+.btn.pokemonType_type_fire:hover,
+.btn.pokemonType_type_water:hover,
+.btn.pokemonType_type_grass:hover,
+.btn.pokemonType_type_electric:hover,
+.btn.pokemonType_type_ice:hover,
+.btn.pokemonType_type_dragon:hover,
+.btn.pokemonType_type_dark:hover,
+.btn.pokemonType_type_fairy:hover,
+.btn.pokemonType_type_unknown:hover,
+.btn.pokemonType_type_shadow:hover,
+.btn.pokemonType_type_psychic:hover{
+  color: #fff;
+}
+
+.pokemonType_type_normal{
+  background-color: #A8A878;
+}
+.pokemonType_type_fighting{
+  background-color: #C03028;
+}
+.pokemonType_type_flying{
+  background-color: #A890F0;
+}
+.pokemonType_type_poison{
+  background-color: #A040A0;
+}
+.pokemonType_type_ground{
+  background-color: #E0C068;
+}
+.pokemonType_type_rock{
+  background-color: #B8A038;
+}
+.pokemonType_type_bug{
+  background-color: #A8B820;
+}
+.pokemonType_type_ghost{
+  background-color: #705898;
+}
+.pokemonType_type_steel{
+  background-color: #B8B8D0;
+}
+.pokemonType_type_fire{
+  background-color: #F08030;
+}
+.pokemonType_type_water{
+  background-color: #6890F0;
+}
+.pokemonType_type_grass{
+  background-color: #78C850;
+}
+.pokemonType_type_electric{
+  background-color: #F8D030;
+}
+.pokemonType_type_ice{
+  background-color: #98D8D8;
+}
+.pokemonType_type_dragon{
+  background-color: #7038F8;
+}
+.pokemonType_type_dark{
+  background-color: #705848;
+}
+.pokemonType_type_fairy{
+  background-color: #EE99AC;
+}
+.pokemonType_type_unknown{
+  background-color: #68A090;
+}
+.pokemonType_type_shadow{
+  background-color: #CECECE; /* ? */
+}
+.pokemonType_type_psychic{
+  background-color: #F85888;
+}
+
+/***
+* \POKEMON TYPES
+**/
+
+/***
+* Grid Loader
+***/
+
+.pokemonList__gridLoaderWrapper{
+  z-index: 1;
+  background-color: rgba(255,255,255,0.6);
+}
+.sectLoaderWrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.sectLoaderWrapper.sectLoaderWrapper_hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.sectLoader_pos_def{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.sectLoader_pos_top{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+.sectLoader_pos_bottom{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+.loader_type_pokeball{
+  width: 94px;
+  height: 94px;
+  -webkit-transform: translate(-50%,-50%) rotate(45deg);
+  -ms-transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%,-50%) rotate(45deg); 
+}
+.loader_type_pokeball .el1{
+  box-sizing: content-box; /* overrides bootstrap */
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-width: 12px;
+  border-color: #6ab071;
+  border-style: solid;
+  border-radius: 70px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  animation: rotate1 2s 0.5s linear infinite;
+}
+.loader_type_pokeball .el2{
+  box-sizing: content-box; /* overrides bootstrap */
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-width: 12px;
+  border-color: #b2dea6; 
+  border-style: solid;
+  border-radius: 70px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  top: 18px;
+  left: 18px;
+  animation: rotate2 2s linear infinite;
+}
+.loader_type_pokeball .el3{
+  box-sizing: content-box; /* overrides bootstrap */
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: red;
+  border-width: 12px;
+  border-color: #e0f1db;
+  border-style: solid;
+  border-radius: 70px;
+  top: 35px;
+  left: 35px;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dots{
+  0% {
+    width: 33.3%;
+  }
+  25% {
+    width: 33.3%;
+  }
+  25.1% {
+    width: 66.6%;
+  }
+  50% {
+    width: 66.6%;
+  }
+  50.1% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/***
+* \Grid Loader
+***/
+
+/***
+* Load More Loader
+***/
+
+.pokemonList__more{
+  position: relative;
+}
+.pokemonList__moreLoader{
+  display: inline-block;
+}
+.pokemonList__moreLoader.pokemonList__moreLoader_hidden{
+  display: none;
+}
+
+/***
+* \Load More Loader
+***/
+
+/***
+* Dots
+***/
+
+.dots{
+  position: relative;
+  display: inline-block;
+}
+.dots:before{
+  content: "...";
+  color: transparent;
+}
+.dotsWrapper{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 33.3%;
+  height: 100%;
+  overflow: hidden;
+  animation: dots 1s linear infinite;
+}
+.dotsWrapper:before{
+  content: "...";
+}
+
+/***
+* \Dots
+***/
