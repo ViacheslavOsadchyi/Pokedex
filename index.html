@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokedex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+</head>
+<body>
+	<main id="pageContent">
+		<section  id="pokedex1" class="pokedex">
+			<div class="page-header pokedex__pageHeader">
+				<div class="pokedex__typeFilter btn-group hidden">
+				  <button type="button" class="btn disabled pokedex__typeFilterState">All</button>
+				  <button type="button" class="btn pokedex__typeFilterReset">
+				    <span class="glyphicon glyphicon-remove"></span>
+				  </button>
+				</div>
+				<h1 class="pokedex__heading">Pokedex</h1>
+			</div>
+			<div class="pokedex__content row">
+				<div class="pokemonList col-xs-12 col-md-9">
+					<div class="pokemonList__gridHolder">
+						<div class="pokemonList__gridLoaderWrapper sectLoaderWrapper">
+							<div class="loader loader_type_pokeball sectLoader sectLoader_pos_def">
+								<div class="el1"></div>
+								<div class="el2"></div>
+								<div class="el3"></div>
+							</div>
+						</div>
+						<div id="pokemonList__grid1" class="pokemonList__grid row">
+						</div>
+					</div>
+					<div class="pokemonList__more btn btn-block btn-primary btn-lg">
+						Load More
+						<span class="pokemonList__moreLoader pokemonList__moreLoader_hidden loader loader_type_dots dots">
+							<span class="dotsWrapper"></span>
+						</span>
+					</div>
+				</div>
+				<aside class="pokemonInfo col-xs-12 col-md-3">
+					<div class="pokemonInfo__content empty">
+					</div>
+				</aside>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
