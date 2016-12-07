@@ -80,7 +80,7 @@ function Pokedex__getData ( req, onloadCallback, onprocCallback ){
 function Pokedex__getChunk ( limit, offset, callback ){
 	var limit = limit !== undefined ? limit : 12;
 	var offset = offset !== undefined ? offset : 0;
-	var req = this.buildRequest( ["http://pokeapi.co/api/v1/pokemon"], {
+	var req = this.buildRequest( ["https://pokeapi.co/api/v1/pokemon"], {
 		"limit"		: limit,
 		"offset"	: offset
 	});
@@ -90,7 +90,7 @@ function Pokedex__nextChunk ( callback ){
 	if ( !this.meta.next ){
 		return false;
 	}
-	this.getData( "http://pokeapi.co" + this.meta.next, this.procChunk, callback );	
+	this.getData( "https://pokeapi.co" + this.meta.next, this.procChunk, callback );	
 }
 function Pokedex__procChunk ( xhr, callback ){
 	var responseData = {};
@@ -145,7 +145,7 @@ function Pokedex__createDsr ( data ){
 	var dsrMarkup = "";
 	var i, type, key, prop;
 	dsrEl.className = "pokemonDsr thumbnail";
-	dsrMarkup += "<img src=\"http://pokeapi.co/media/img/" + data.id + ".png/\" class=\"pokemonDsr__photo\" alt />";
+	dsrMarkup += "<img src=\"https://pokeapi.co/media/img/" + data.id + ".png/\" class=\"pokemonDsr__photo\" alt />";
 	dsrMarkup += "<h2 class=\"pokemonDsr_name h3\">" + data.name + " #" + data.id + "</h2>";
 	dsrMarkup += "<table class='pokemonDsr__props table-striped'>";
 		dsrMarkup += "<tr>";
