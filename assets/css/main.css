@@ -27,7 +27,8 @@
   transition: 0.3s ease;
 }
 .pokeballBg{
-  background-image: url(../../pokeball.png);
+  background-image: url(../../img/pokeball.png);
+  background-position: center center;
 }
 
 /***
